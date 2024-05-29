@@ -1,0 +1,145 @@
+{
+  "flex-layout.col#header-menu": {
+    "title": "Menu",
+    "children": [
+      "category-menu"
+    ],
+    "props": {
+      "blockClass": "header-menu",
+      "verticalAlign": "top",
+      "preventVerticalStretch": false,
+      "preventHorizontalStretch": true
+    }
+  },
+
+
+  //Mobile
+  "flex-layout.row#header-menu-mobile": {
+    "title": "Menu",
+    "children": [
+      "disclosure-layout#header-menu-mobile"
+    ],
+    "props": {
+      "blockClass": "header-menu-mobile",
+      "horizontalAlign": "left",
+      "colSizing": "equal",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "disclosure-layout#header-menu-mobile": {
+    "children": [
+      "disclosure-trigger#header-menu-mobile",
+      "disclosure-content#header-menu-mobile"
+    ],
+    "props": {
+      "blockClass": "header-menu-mobile",
+      "initialVisibility": "hidden",
+      "animated": true
+    }
+  },
+
+  "disclosure-trigger#header-menu-mobile": {
+    "children": [
+      "rich-text#header-menu-mobile"
+    ],
+    "props": {
+      "blockClass": "header-menu-mobile",
+      "as": "div"
+    }
+  },
+
+  "disclosure-content#header-menu-mobile": {
+    "children": [
+      "flex-layout.col#header-menu-mobile"
+    ],
+    "props": {
+      "blockClass": "header-menu-mobile"
+    }
+  },
+
+  "flex-layout.col#header-menu-mobile": {
+    "title": "Menu",
+    "children": [
+      "disclosure-trigger#header-menu-mobile",
+      "category-menu"
+    ],
+    "props": {
+      "blockClass": "header-menu-mobile",
+      "verticalAlign": "top",
+      "preventVerticalStretch": false,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "rich-text#header-menu-mobile": {
+    "props": {
+      "text": "Departamentos",
+      "blockClass": "header-menu-mobile"
+    }
+  },
+
+  "category-menu": {
+    "props": {
+      "showAllDepartments": true,
+      "departmentsSchema": [
+        {
+          "__editorItemTitle": "Segurança Eletrônica",
+          "id": 8,
+          "isDirectLink": false,
+          "showSubCategories": true
+        },
+        {
+          "__editorItemTitle": "Fechaduras Digitais",
+          "id": 512,
+          "isDirectLink": false,
+          "showSubCategories": false
+        },
+        {
+          "__editorItemTitle": "Roteadores",
+          "id": 464,
+          "isDirectLink": false,
+          "showSubCategories": false
+        },
+        {
+          "__editorItemTitle": "Telefonia",
+          "id": 115,
+          "isDirectLink": false,
+          "showSubCategories": false
+        },
+        {
+          "__editorItemTitle": "Vídeo Porteiros",
+          "id": 470,
+          "isDirectLink": false,
+          "showSubCategories": false
+        },
+        {
+          "__editorItemTitle": "Casa Inteligente",
+          "name": "Casa Inteligente",
+          "href": "/casa-inteligente",
+          "isDirectLink": true,
+          "openNewPage": false,
+          "hasFeatured": false
+        },
+        {
+          "__editorItemTitle": "Kits",
+          "name": "Kits",
+          "href": "/informatica/acessorios/kits",
+          "isDirectLink": true,
+          "openNewPage": false,
+          "hasFeatured": false
+        },
+        {
+          "__editorItemTitle": "Ofertas",
+          "name": "Ofertas",
+          "href": "/ofertas",
+          "isDirectLink": true,
+          "openNewPage": false,
+          "hasFeatured": true
+        }
+      ]
+    }
+  }
+}

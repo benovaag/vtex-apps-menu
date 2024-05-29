@@ -1,0 +1,37 @@
+/* Desktop */
+.container--header-fixed {
+    transition: .3s;
+    position: fixed;
+}
+
+@media screen and (min-width: 1026px) {
+    .wrapper--header-fixed {
+        z-index: 100;
+        width: 100%;
+    }
+
+    .wrapper--header-fixed--stuck :global(.vtex-flex-layout-0-x-flexRow--header-top) {
+        /* transform: translateY(100%);
+        margin-top: -33px;
+        position: initial; */
+    }
+
+    .wrapper--header-fixed--stuck :global(.vtex-flex-layout-0-x-flexRow--header-bottom) {
+        /* transform: translateY(-100%);
+        z-index: -1; */
+    }
+
+    .wrapper--header-fixed--stuck :global(.vtex-sticky-layout-0-x-container) {
+        z-index: 999;
+        height: 74px;
+        transform: translateY(-33px);
+    }
+
+    .wrapper--header-fixed--stuck :global(.vtex-store-components-3-x-sizeDesktop) {
+        min-height: auto;
+    }
+
+    .wrapper--header-fixed--stuck :global(.vtex-search-2-x-biggy-autocomplete) {
+        top: 10px;
+    }
+}

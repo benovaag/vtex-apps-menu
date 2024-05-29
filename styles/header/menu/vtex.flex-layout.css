@@ -1,0 +1,5 @@
+@media screen and (max-width: 1025px) {
+    .flexColChild--header-menu {
+        /* height: 100% !important; */
+    }
+}

@@ -1,0 +1,50 @@
+/* Header Top */
+.flexRow--header-top {
+    background: #E2E9ED;
+    transition: .3s;
+    transform: translateY(0);
+    padding: 5px 0;
+}
+
+.flexRow--header-top:global(.vtex-position-relative) {
+    position: relative;
+    z-index: 100;
+}
+
+@media screen and (min-width: 1026px) {
+    .flexRow--header-top {
+        min-height: 30px;
+    }
+}
+
+
+/* Header Middle */
+.flexRow--header-middle {
+    background: #152E3F;
+    transition: .3s;
+    transform: translateY(0);
+    position: relative;
+    z-index: 10;
+}
+
+@media screen and (min-width: 1026px) {
+    .flexRow--header-middle {
+        min-height: 74px;
+    }
+}
+
+/* Header Bottom */
+.flexRow--header-bottom {
+    box-shadow: 0 4px 5px #6A7C8D1a;
+    background: #FFFFFF;
+    transition: .3s;
+    transform: translateY(0);
+    margin: 0;
+    border-top: 2px solid #FCBE0C;
+}
+
+@media screen and (min-width: 1026px) {
+    .flexRow--header-bottom {
+        min-height: 49px;
+    }
+}
